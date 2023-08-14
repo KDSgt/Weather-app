@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="location">
+        <h1 class="location-timezone">Timezone</h1>
+        <img src="./icons/day/113.png"
+         class="icon"
+         alt="icon" 
+         width="128" 
+         height="128">
+        </canvas>
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+            <h2 class="temperature-degree">32</h2>
+            <span>&#176C</span>
+        </div>
+
+         <div>
+            <small>
+                <span>Feels like</span>
+                <span class="feelsLike">30</span>
+                <span class="degree">
+                    &#176C
+                </span>
+            </small>
+        </div>
+       
+        <div class="Weather">
+           
+            <span class="condition">Sunny</span>
+        </div>
+    </div>
+    
+    <div class="panel">
+        <form id="locationInput">
+            <input type="text"
+            class="search"
+            placeholder="Search location...">
+            <button type="submit" class="submit">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+        </form>
+        <ul class="cities">
+            <li class="city">Guwahati</li>
+            <li class="city">Delhi</li>
+            <li class="city">Mumbai</li>
+        </ul>
+
+        <ul class="details">
+            <h4>Weather Details</h4>
+            <li>
+                <span>Cloudy</span>
+                <span class="cloud">74%</span>
+            </li>
+            <li>
+                <span>Humidity</span>
+                <span class="humidity">80%</span>
+            </li>
+            <li>
+                <span>UV Index</span>
+                <span class="uv">low</span>
+            </li>
+            <li>
+                <span>Wind</span>
+                <span class="speed">3 km/h</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/717de48378.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
